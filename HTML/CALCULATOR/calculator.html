@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="calculator card">
+            <input type="text" class="form-control" id="display" disabled>
+            <div class="buttons mt-3">
+                <button class="btn btn-primary" onclick="appendToDisplay('1')">1</button>
+                <button class="btn btn-primary" onclick="appendToDisplay('2')">2</button>
+                <button class="btn btn-primary" onclick="appendToDisplay('3')">3</button>
+                <button class="btn btn-info" onclick="appendToDisplay('+')">+</button>
+                <button class="btn btn-primary" onclick="appendToDisplay('4')">4</button>
+                <button class="btn btn-primary" onclick="appendToDisplay('5')">5</button>
+                <button class="btn btn-primary" onclick="appendToDisplay('6')">6</button>
+                <button class="btn btn-info" onclick="appendToDisplay('-')">-</button>
+                <button class="btn btn-primary" onclick="appendToDisplay('7')">7</button>
+                <button class="btn btn-primary" onclick="appendToDisplay('8')">8</button>
+                <button class="btn btn-primary" onclick="appendToDisplay('9')">9</button>
+                <button class="btn btn-info" onclick="appendToDisplay('*')">*</button>
+                <button class="btn btn-primary" onclick="appendToDisplay('0')">0</button>
+                <button class="btn btn-danger" onclick="clearDisplay()">AC</button>
+                <button class="btn btn-success" onclick="calculateResult()">=</button>
+                <button class="btn btn-info" onclick="appendToDisplay('/')">/</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
